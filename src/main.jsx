@@ -1,6 +1,5 @@
 import { Component, StrictMode } from 'react'
 import './index.css'
-import App from './App.jsx'
 import { RouterProvider, createBrowserRouter } from "react-router";
 import { createRoot } from 'react-dom/client';
 import MainLayout from './MainLayout/MainLayout.jsx';
@@ -11,7 +10,7 @@ import UpdateCoffe from './components/UpdateCoffe.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    Component: <MainLayout />,
+    Component: MainLayout ,
     children: [
 
       {
